@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="355.0" prefWidth="278.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="355.0" prefWidth="291.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="guessButton" layoutX="64.0" layoutY="216.0" mnemonicParsing="false" onAction="#guess" prefHeight="28.0" prefWidth="168.0" text="Guess">
+               <font>
+                  <Font size="25.0" />
+               </font></Button>
+            <TextField fx:id="textField" layoutX="41.0" layoutY="101.0" onAction="#guess" prefHeight="99.0" prefWidth="214.0">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+               <font>
+                  <Font size="22.0" />
+               </font></TextField>
+            <Label fx:id="headerName" alignment="CENTER" layoutX="41.0" layoutY="14.0" prefHeight="66.0" prefWidth="214.0" text="Угадайте слово" textAlignment="CENTER" textFill="#440ec2">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button fx:id="resetButton" layoutX="64.0" layoutY="286.0" mnemonicParsing="false" onAction="#reset" prefHeight="54.0" prefWidth="168.0" text="Reset">
+               <font>
+                  <Font size="25.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
